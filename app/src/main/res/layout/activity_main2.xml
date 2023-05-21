@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+
+    <TextView
+        android:id="@+id/infoCity"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_list"
+        android:gravity="center"
+        android:hint="Населённый пункт не выбран"
+        android:textColor="#FF2E4A66"
+        android:textColorHint="#607E9C"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/headerOne"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_list"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:text="Температура сейчас:"
+        android:textColor="#FF2E4A66"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoCity" />
+
+    <TextView
+        android:id="@+id/infoTemperature"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_list"
+        android:gravity="start"
+        android:hint="Данные температуры не доступны"
+        android:textColor="#FF2E4A66"
+        android:textColorHint="#607E9C"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerOne" />
+
+    <TextView
+        android:id="@+id/Wind"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/shape_list"
+        android:text="Данные о скорости ветра:"
+        android:textSize="20sp"
+        android:textColor="#FF2E4A66"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/buttonSetting"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#436E98"
+        android:text="Настройки"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Aktirovka" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="350dp"
+        android:background="@drawable/shape_list"
+        android:layout_height="wrap_content"
+        android:textColor="#FF2E4A66"
+        android:textSize="19sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:gravity="start"
+        android:text="Скорость ветра"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoTemperature" />
+
+    <TextView
+        android:id="@+id/Aktirovka"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_list"
+        android:layout_marginTop="24dp"
+        android:text="Актировка"
+        android:textColor="#FF2E4A66"
+        android:textColorHint="#607E9C"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Wind" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
